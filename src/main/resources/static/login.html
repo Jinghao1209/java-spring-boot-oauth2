@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div></div>
+        <div>
+            With Google: <a href="/oauth2/authorization/google">click here</a>
+        </div>
+        <div>
+            Logged in as: <span id="user"></span>
+            <div>
+                <button onClick="logout()">
+                    Logout
+                </button>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            const logout = () => {
+                $.post("/oauth2/logout", function (res) {
+                    // TODO: handle logout
+                });
+
+                return true;
+            };
+        </script>
+    </body>
+</html>

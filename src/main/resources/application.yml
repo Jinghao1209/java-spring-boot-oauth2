@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: "oauth2"
+    security:
+        oauth2:
+            client:
+                registration:
+                    google:
+                        client-id: "{{ google_client_id }}" # TODO: replace with real client id
+                        client-secret: "{{ google_client_secret }}" # TODO: replace with real client secret
+                        scope:
+                            - email
+                            - profile
