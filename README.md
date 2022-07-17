@@ -2,5 +2,5 @@
 Linking With Google Account
 
 ## Usage
-Check all todo to customize function
+Check all todo to customize function  
 Run: `./mvnw spring-boot:run`
